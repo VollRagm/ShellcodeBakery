@@ -38,6 +38,7 @@ namespace ShellcodeBakery
             this.Assemble64Btn = new System.Windows.Forms.Button();
             this.LanguageSelection = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // InputTextBox
@@ -58,7 +59,7 @@ namespace ShellcodeBakery
             this.OutputTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.OutputTextBox.Font = new System.Drawing.Font("Consolas", 11.25F);
             this.OutputTextBox.ForeColor = System.Drawing.Color.White;
-            this.OutputTextBox.Location = new System.Drawing.Point(461, 37);
+            this.OutputTextBox.Location = new System.Drawing.Point(461, 35);
             this.OutputTextBox.Name = "OutputTextBox";
             this.OutputTextBox.Size = new System.Drawing.Size(529, 441);
             this.OutputTextBox.TabIndex = 0;
@@ -140,12 +141,24 @@ namespace ShellcodeBakery
             this.label1.TabIndex = 4;
             this.label1.Text = "ASM:";
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(113)))), ((int)(((byte)(180)))));
+            this.linkLabel1.Location = new System.Drawing.Point(291, 10);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(71, 13);
+            this.linkLabel1.TabIndex = 5;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "FASM Syntax";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.ClientSize = new System.Drawing.Size(1002, 496);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LanguageSelection);
             this.Controls.Add(this.AnnotateOffsetsCb);
@@ -174,6 +187,7 @@ namespace ShellcodeBakery
         private System.Windows.Forms.Button Assemble64Btn;
         private System.Windows.Forms.ComboBox LanguageSelection;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 

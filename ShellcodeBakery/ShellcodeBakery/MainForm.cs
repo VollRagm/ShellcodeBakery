@@ -27,6 +27,12 @@ namespace ShellcodeBakery
             {
                 try
                 {
+                    if (string.IsNullOrWhiteSpace(line))
+                    {
+                        ++lineCount;
+                        continue;
+                    }
+
                     var instruction = AssembleSingleInstruction(line, bitness, lineCount == InputTextBox.Lines.Length - 1, out int length);
                     output += (BeautifyCb.Checked ? "\t": "") + instruction;
 
